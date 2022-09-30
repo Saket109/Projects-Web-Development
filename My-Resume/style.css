@@ -1,0 +1,105 @@
+/* body style */
+body{
+    margin:0px
+}
+
+/* text centre */
+.text-centre{
+    text-align: center;
+}
+
+/* horizontal-list */
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    font-size: larger;
+    margin: 0px 20px;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-menu li a{
+    transition: color 0.5s,border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 2px solid white;
+}
+
+/* body header */
+#body-header{
+    height: 65vh;
+    background-image: url(laptop_mouse.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.8;
+}
+
+/* header heading */
+#header-heading{
+    color: white;
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+/* header Social image section */
+#social-image-section li a i{
+    height: 30px;
+    width: 30px;
+}
+#social-image-section li a i:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+#social-image-section a{
+    color: white;
+    text-decoration: none;
+}
+#social-image-section a:hover{
+    color: lightgrey;
+}
+
+/* header divs */
+#DIV1{
+    margin-bottom: 30px;
+}
+
+/* about section */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 6px lightgrey;
+}
+
+#about-para{
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: larger;
+}
+#about-para p{
+    color: rgb(77, 73, 73);
+}
+#about-para p b{
+    color: #2857a4;
+}
