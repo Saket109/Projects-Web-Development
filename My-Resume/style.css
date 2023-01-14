@@ -1,11 +1,16 @@
 /* body style */
 body{
-    margin:0px
+    margin:0px;
+    font-family: sans-serif;
 }
 
 /* text centre */
 .text-centre{
     text-align: center;
+}
+
+#name-social-container{
+    margin-top: 20vh;
 }
 
 /* horizontal-list */
@@ -16,19 +21,37 @@ body{
 }
 .horizontal-list li{
     display: inline-block;
-    font-size: larger;
-    margin: 0px 20px;
+    font-size: large;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
 }
 .horizontal-list li a{
     color: white;
     text-decoration: none;
 }
 .nav-menu li a{
-    transition: color 0.5s,border-bottom 4s;
+    transition: color 0.5s , border-bottom 4s;
 }
 .nav-menu li a:hover{
     color: lightgrey;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid black;
+}
+
+/* SECTION COMMON RULES  */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: #9e9b9b29;
 }
 
 /* body header */
@@ -39,38 +62,33 @@ body{
     background-attachment: fixed;
     background-position: center;
     opacity: 0.8;
+    padding-top: 1.2rem;
+}
+
+/* pseudo class "TARGET" */
+#body-header nav ul a:target{
+    background-color: blue;
 }
 
 /* header heading */
 #header-heading{
     color: white;
     font-size: 3rem;
-    margin-top: 100px;
     margin-bottom: 0.5rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
 }
 
 /* header Social image section */
-#social-image-section li a i{
-    height: 30px;
-    width: 30px;
-}
-#social-image-section li a i:hover{
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
-}
-#social-image-section a{
-    color: white;
-    text-decoration: none;
-}
-#social-image-section a:hover{
-    color: lightgrey;
 }
 
-/* header divs */
-#DIV1{
-    margin-bottom: 30px;
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
 /* about section */
@@ -78,6 +96,7 @@ body{
     height: auto;
     width: 100%;
     position: relative;
+    margin-bottom: 30px;
 }
 #my-image{
     height: 12rem;
@@ -89,17 +108,367 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px 6px lightgrey;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
 }
 
 #about-para{
-    margin-left: 150px;
-    margin-right: 150px;
-    font-size: larger;
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
 }
-#about-para p{
+/* #about-para p{
     color: rgb(77, 73, 73);
-}
+    margin-top: 80px;
+    word-spacing: 0.3rem;
+    line-height: 1.6rem;
+} */
 #about-para p b{
     color: #2857a4;
+}
+
+/* SECTION HEADING */
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* SKILLS */
+
+.skills-display{
+    display: flex;
+    padding: 10px;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    /* border-radius: 50%;
+    margin-top: -10px; */
+}
+
+.skills-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+    /* margin-left: 70px;
+    margin-right: 50px;
+    margin-top: 30px; */
+}
+
+.skills-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* COMMON MARGIN CLASSES */
+
+.mb75px{
+    margin-bottom: 70px;
+}
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+.mbblue{
+    background-color: #2857a4;
+}
+
+.mborange{
+    background-color: rgba(219, 74, 16, 0.842);
+}
+
+.mbpurple{
+    background-color: rgba(114, 31, 114, 0.712);
+}
+
+/* PERCENATGE CLASS */
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+
+.forty-five-percent{
+    width: 45%;
+    height: inherit;
+}
+
+.ninty-percent{
+    width: 90%;
+    height: inherit;
+}
+
+.fifty-percent{
+    width: 45%;
+    height: inherit;
+}
+
+
+/* Portfolio section */
+
+
+
+/* Portfolio display */
+
+#portfolio-display{
+    box-sizing: border-box;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-name{
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-name img{
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-name:hover{
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-name:hover .portfolio-details{
+    background-color: #80808078;
+    color: whitesmoke;
+}
+
+.portfolio-details{
+    transform: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* CONTACT SECTION */
+
+#contact{
+    background-color: #0abcf9;
+    /* background: linear-gradient(to right,#2857a4,#403066 70%); */
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1 span{
+    color: white;
+}
+
+.white_color{
+    color: white
+}
+
+#contact-form{
+    margin-left: 20%;
+}
+
+#contact-form input,textarea{
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"]{
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover{
+    background: white;
+    color: #13386fe0;
+}
+
+
+#contact-container{
+    display: flex;
+}
+
+.my-details-container{
+    width: 35%;
+    margin-left: 6%;
+}
+
+.my-details-container h3{
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container{
+    width: 50%;
+}
+
+#my-details-container p{
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+
+
+/* EXPERIENCE  SECTION */
+
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+}
+
+.timeline-box{
+    padding: 5px;
+    position: relative;
+    /* margin: 5px; */
+    width: 40%;
+    border: 2px solid black;
+    min-height: 150px;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%; 
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after{
+    left: -9%;
+}
+
+.timeline-container{
+    padding: 8px;
+}
+
+.timeline-logo{
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img{
+    width: 100%;
+}
+
+#timeline-divider{
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller{
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i{
+    transform: rotate(90deg);
+    margin-top: -35px;
+    /* display: block; */
+    color: #2857a4;
+}
+
+.experience-designation{
+    font-size: 1.4rem;
+}
+
+.experience-company-name{
+    margin: 5px 0px 0px;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration{
+    color: grey;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.experience-description{
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
 }
